@@ -1,0 +1,51 @@
+.btn-ghost {
+  display: flex;
+  color: #000000;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  font-size: 64px;
+  align-content: center;
+}
+
+.btn-ghost a {
+  text-decoration: none !important;
+  color: #000000;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #670BFF;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #4D04C4;
+  color: white;
+}
+
+#btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  height: 30px;
+  width: 60px;
+  font-size: 64px;
+}
+
+#btn-ghost:hover {
+  opacity: 1;
+}
