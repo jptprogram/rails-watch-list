@@ -1,4 +1,15 @@
 <div class="container">
 <h2><%= @list.name %></h2>
 
+<div class=".btn-flat" style="width:40px,height: 20px;"> <%= link_to "New bookmark" , new_list_bookmark_path(@list)  %> </div>
+
+<% @list.bookmarks.each do |bookmark| %>
+<div class="card-product">
+  <%= cl_image_tag bookmark.photo.key, height: 300, width: 400, crop: :fill %>
+  <div class="card-product-infos">
+    <h2><%= bookmark.movie.title %></h2>
+    <p><%= bookmark.comment %></p>
+  </div>
+</div>
+<% end %>
 </div>

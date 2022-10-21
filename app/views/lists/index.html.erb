@@ -45,11 +45,10 @@
     <div class="cards">
     <% @lists.each do |list|  %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <%= list.name %>
+      <%= link_to list.name , list_path(list)  %>
       </div>
       <% end %>
      <div class="btn btn-ghost" style="width:40px,height: 20px;"> <%= link_to "New List" , new_list_path  %> </div>
-
     </div>
   </div>
 </div>

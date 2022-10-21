@@ -3,4 +3,5 @@ class Bookmark < ApplicationRecord
   belongs_to :list
   validates :list , :uniqueness => {:scope => :movie}
   validates :comment, length: { minimum: 6 }
+  has_one_attached :photo
 end
